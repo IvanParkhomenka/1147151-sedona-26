@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Пархоменко](https://up.htmlacademy.ru/htmlcss/26/user/1147151).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Мулярчик](https://htmlacademy.ru/profile/ivanmuliarchyk).
 
 ---
 
