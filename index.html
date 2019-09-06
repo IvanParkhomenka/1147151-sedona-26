@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -42,22 +42,24 @@
         </div>
       </section>
 
-      <section class="feature-items">
-        <div class="feature-item">
+      <section class="feature-icons">
+       <ul class="feature-list">
+        <li class="feature-item">
           <img src="" width="" height="" alt="Жильё">
           <h2>Жильё</h2>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-        <div class="feature-item">
+        </li>
+        <li class="feature-item">
           <img src="" width="" height="" alt="Еда">
           <h2>Еда</h2>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div class="feature-item">
+        </li>
+        <li class="feature-item">
           <img src="" width="" height="" alt="Сувениры">
           <h2>Сувениры</h2>
           <p>Не только китайского, но и местного производства!</p>
-        </div>
+        </li>
+       </ul>
       </section>
 
       <section class="features-image">
@@ -71,22 +73,24 @@
         </div>
       </section>
 
-      <section class="feature-list">
-        <div class="feature-item">
+      <section class="features">
+       <ul class="feature-list">
+        <li class="feature-item">
           <h2>Небольшая площадь</h2>
           <span>- №3 -</span>
           <p>Все достопримечательности находятся очень близко</p>
-        </div>
-        <div class="feature-item">
+        </li>
+        <li class="feature-item">
           <h2>Красивая дорога</h2>
           <span>- №4 -</span>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="feature-item">
+        </li>
+        <li class="feature-item">
           <h2>Мало туристов</h2>
           <span>- №5 -</span>
           <p>Большинство едет в Гранд-каньон и толпится там</p>
-        </div>
+        </li>
+       </ul>
       </section>
 
       <section class="interested">
@@ -107,12 +111,20 @@
             </div>
             <div class="number-of-persons">
               <div class="half-width">
-                <label>Взрослые:</label>
-                <div class="adults"></div>
+                <label for="adults-field">Взрослые:</label>
+                <div class="adults">
+                  <button type="button"></button>
+                  <input type="text" name="adults-field" id="adults-field" value="2" size="1">
+                  <button type="button"></button>
+                </div>
               </div>
               <div class="half-width">
-                <label>Дети:</label>
-                <div class="kids"></div>
+                <label for="kids-field">Дети:</label>
+                <div class="kids">
+                  <button type="button"></button>
+                  <input type="text" name="kids=field" id="kids-field" value="0" size="1">
+                  <button type="button"></button>
+                </div>
               </div>
             </div>   
             <button type="submit">Найти</button>           
@@ -136,7 +148,7 @@
         <a class="social-btn" href="#"></a>
       </div>
       <div class="footer-copyright">
-        Website by
+        <span>Website by</span>
         <a href="#">html academy</a>
       </div>
     </footer>
