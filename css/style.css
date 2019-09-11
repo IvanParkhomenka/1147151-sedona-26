@@ -16,3 +16,21 @@ body {
 .main-nav ul {
     list-style: none;
 } 
+
+.main-image {
+    width: 1200px; /* временно */
+    height: 510px; /* временно */
+    background: blue url("../img/background-photo.jpg") no-repeat;
+}
+
+.map {
+    width: 1200px; /* временно */
+    height: 593px; /* временно */
+    background-image: url("../img/map.jpg");
+}
+
+.hotels-filter {
+    width: 1200px; /* временно */
+    height: 240px; /* временно */
+    background: blue url("../img/filter-background.jpg") no-repeat;
+}
