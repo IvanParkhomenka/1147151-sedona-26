@@ -38,6 +38,5 @@ body {
 
 .hotels-filter {
     width: 1200px; /* временно */
-    height: 240px; /* временно */
     background: blue url("../img/filter-background.jpg") no-repeat;
 }

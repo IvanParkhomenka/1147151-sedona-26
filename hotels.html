@@ -35,37 +35,53 @@
             <div class="infastructure">
                 <fieldset class="infastructure-field">
                     <legend>Инфраструктура:</legend>
-                    <input type="checkbox" name="pool" id="pool" checked>
-                    <label for="pool">Бассейн</label>
-                    <input type="checkbox" name="parking" id="parking">
-                    <label for="parking">Парковка</label>
-                    <input type="checkbox" name="wi-fi" id="wi-fi">
-                    <label for="wi-fi">Wi-fi</label>
+                    <ul class="infastructure-list">
+                        <li>
+                           <input type="checkbox" name="pool" id="pool" checked>
+                           <label for="pool">Бассейн</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="parking" id="parking">
+                           <label for="parking">Парковка</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="wi-fi" id="wi-fi">
+                           <label for="wi-fi">Wi-fi</label>
+                        </li>
+                    </ul>
                 </fieldset>
             </div>
             <div class="type-of-housing">
                 <fieldset class="type-of-housing-field">
                     <legend>Тип жилья:</legend>
-                    <input type="checkbox" name="hotel" id="hotel" checked>
-                    <label for="hotel">Гостиница</label>
-                    <input type="checkbox" name="motel" id="motel" checked>
-                    <label for="motel">Мотель</label>
-                    <input type="checkbox" name="appartment" id="appartment" checked>
-                    <label for="appartment">Апартаменты</label>
+                    <ul class="type-of-housing-list">
+                        <li>
+                           <input type="checkbox" name="hotel" id="hotel" checked>
+                           <label for="hotel">Гостиница</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="motel" id="motel" checked>
+                           <label for="motel">Мотель</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="appartment" id="appartment" checked>
+                           <label for="appartment">Апартаменты</label>
+                        </li>
+                    </ul>
                 </fieldset>
             </div>
             <div class="cost-container">
                 <div class="cost">
-                    <div class="cost-title">
+                    <p class="cost-title">
                         Стоимость в сутки (Р):
-                    </div>
-                    <div class="price-cost">
+                    </p>
+                    <p class="price-cost">
                         <label>От<input type="text" value="0"></label>
                         <label>До<input type="text" value="3000"></label>
-                    </div>
-                    <div class="strip">
+                    </p>
+                    <p class="strip">
                      <input type="range" min="0" max="3000" step="1"> <!--Вряд ли)-->
-                    </div>
+                    </p>
                     <button type="submit">Показать</button>
                 </div>
             </div>
