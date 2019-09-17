@@ -23,14 +23,15 @@
       </nav>
     </header>
 
-    <main class="main-main">
+    <main class="main-index">
 
       <h1 class="visually-hidden">Седона</h1>
 
       <section class="main-image">
 
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img src="img/welcome.png" width="459" height="353" alt="Welcome to SEDONA">
+        <img class="welcome-img" src="img/welcome.png" width="459" height="353" alt="Welcome to SEDONA">
+        <!-- ::after -->
       </section>
         
       <section class="feature-title">
@@ -118,7 +119,7 @@
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="form-container">
-          <a href="#">Поиск гостиницы в Седоне</a>
+          <a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p class="date-in-container">
               <label for="date-in">Дата заезда:</label>
@@ -160,17 +161,17 @@
      </main>
 
     <footer class="footer">
-      <div class="footer-left">
+      <div class="footer-contacts">
           <a href="#">#Visitsedona</a>
       </div>
       <div class="footer-social">
-        <a class="social-btn" href="#" aria-label="Твиттер"></a>
-        <a class="social-btn" href="#" aria-label="Фейсбук"></a>
-        <a class="social-btn" href="#" aria-label="Ютуб"></a>
+        <a class="social-btn social-btn-tw" href="#" aria-label="Твиттер"></a>
+        <a class="social-btn social-btn-fb" href="#" aria-label="Фейсбук"></a>
+        <a class="social-btn social-btn-yt" href="#" aria-label="Ютуб"></a>
       </div>
       <div class="footer-copyright">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+        <a class="academy-btn" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html academy"></a>
       </div>
     </footer>
     
