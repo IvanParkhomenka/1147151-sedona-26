@@ -159,12 +159,13 @@ a {
 }
 
 .search-btn:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
 }
 
 .map {
     width: 1200px; /* временно */
-    height: 593px; /* временно */
+    height: 593px; 
     background-image: url("../img/map.jpg");
 }
 
@@ -223,7 +224,158 @@ a {
 
 }
 
+/* hotels.html */
+
+.nav .current,
+.nav .current:hover,
+.nav .current:active {
+    color: #766357;
+    opacity: 1;
+}
+
 .hotels-filter {
     width: 1200px; /* временно */
-    background: blue url("../img/filter-background.jpg") no-repeat;
+
+    color: #ffffff;
+
+    background: #84a3c2 url("../img/filter-background.jpg") no-repeat;
+}
+
+.form-filter {
+    line-height: 21px;
+}
+
+.form-filter legend {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset ul {
+    list-style: none;
+}
+
+.cost-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.results {
+    color: #000000;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.found {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.sorting {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting ul {
+    list-style: none;
+}
+
+.sorting a {
+    color: #000000;
+    opacity: 0.3;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting a:hover {
+    color: #81b3d2;
+    opacity: 1;
+}
+
+.sorting a:active {
+    color: #000000;
+    opacity: 1;
+    border-bottom: none;
+}
+
+.sorting .active, 
+.sorting .active:hover,
+.sorting .active:active {
+    color: #81b3d2;
+    opacity: 1;
+    border-bottom: none;
+}
+
+.arrows {
+
+}
+
+.view {
+    line-height: 21px;
+    color: #000000;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.view-description h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.view-description a {
+    color: #000000;
+}
+
+.view-description a:hover {
+    color: #81b3d2;
+}
+
+.view-description a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.view-description span {
+    color: #333333;
+}
+
+.btn {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.btn-more {
+    background-color: #81b3d2;
+}
+
+.btn-more:hover {
+    background-color: #669ec0;
+}
+
+.btn-more:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
+.btn-reserve {
+    background-color: #766357;
+}
+
+.btn-reserve:hover {
+    background-color: #604e43;
+}
+
+.btn-reserve:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+
+.rating {
+    color: #666666;
+    background-color: #f2f2f2;
 }
