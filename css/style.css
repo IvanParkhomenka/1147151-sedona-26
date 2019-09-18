@@ -63,7 +63,7 @@ a {
     position: absolute;
     top: 0;
     left: 50%;
-    
+
 }
 
 .main-index {
@@ -192,6 +192,9 @@ a {
     display: inline-block;
     width: 46px;
     height: 48px;
+    color: #ffffff;
+    position: relative;
+
     background-color: #81b3d2;
 }
 
@@ -200,28 +203,19 @@ a {
 }
 
 .social-btn:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
 }
 
-.social-btn-tw {
-    background-image: url("../img/twitter.svg");
-    background-repeat: no-repeat;
-    background-size: 17px 15px;
-    background-position: 50% 50%;
-}
-
-.social-btn-fb {
-    background-image: url("../img/fb-icon.svg");
-    background-repeat: no-repeat;
-    background-size: 12px 22px;
-    background-position: 50% 50%;
-}
-
-.social-btn-yt {
-    background-image: url("../img/youtube.svg");
-    background-repeat: no-repeat;
-    background-size: 20px 16px;
-    background-position: 50% 50%;
+.tw-icon,
+.fb-icon,
+.yt-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    fill: currentColor;
 }
 
 .academy-btn {
