@@ -59,19 +59,25 @@ a {
     opacity: 0.3;
 }
 
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+}
+
 .main-index {
     text-align: center;
 }
 
 .main-image {
-    /*
     position: relative;
     height: 508px; 
-    рано? */
+    
     background: #45535e url("../img/background-photo.jpg") no-repeat;
 }
 
-/* 
+
 .main-image::after {
     content: "";
     position: absolute;
@@ -86,7 +92,7 @@ a {
     margin-top: 78px;
     margin-bottom: 77px;
 }
-Рано */
+
 
 .feature-title {
     color: #000000;
@@ -181,7 +187,7 @@ a {
     color: #000000;
 }
 
-/*
+
 .social-btn {
     display: inline-block;
     width: 46px;
@@ -218,10 +224,22 @@ a {
     background-position: 50% 50%;
 }
 
-Рано? */
-
 .academy-btn {
+    color: #231f20;
+}
 
+.academy-btn:hover {
+    color: #81b3d2;
+}
+
+.academy-btn:active {
+    color: #bdbbbc;
+}
+
+.logo-academy {
+    width: 115px;
+    height: 41px;
+    fill: currentColor;
 }
 
 /* hotels.html */
