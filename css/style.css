@@ -1,6 +1,11 @@
+html,
 body {
     margin: 0;
     padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body {
     min-width: 1200px;
 
     font-family: "PT Sans", "Arial", sans-serif;
@@ -12,7 +17,13 @@ body {
 
     background-color: #f2f2f2;
 }
-
+/*
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+*/
 a {
     text-decoration: none;
 }
@@ -20,6 +31,7 @@ a {
 .container-all {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 0 30px 10px #dedede;
 }
 
 .visually-hidden {
@@ -37,11 +49,43 @@ a {
     background-color: #ffffff;
 }
 
-.main-nav ul {
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -23px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.main-nav .wrapper {
+    margin-bottom: -56px;
+}
+
+.inner {
+    display: flex;
+    padding-left: 71px;
+    padding-right: 72px;
+}
+
+.main-nav .inner {
+    flex-direction: column;
+}
+
+.main-nav .nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
 } 
 
 .nav li {
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: left;
 }
 
@@ -65,98 +109,173 @@ a {
 }
 
 .logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-
+    z-index: 2;
 }
 
 .main-index {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
 .main-image {
-    position: relative;
-    height: 508px; 
-    
-    background: #45535e url("../img/background-photo.jpg") no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #45535e url("../img/background-photo.jpg") no-repeat 0 -56px;
 }
 
 
 .main-image::after {
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
     height: 58px;
-    width: 1200px;
+    width: 1201px;
     background: url("../img/polygon.png") no-repeat; 
 }
 
 .welcome-img {
     margin-top: 78px;
-    margin-bottom: 77px;
+    margin-bottom: 19px;
 }
 
 
 .feature-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 59px;
+    padding-bottom: 51px;
+    
     color: #000000;
+
     background-color: #ffffff;
 }
 
 .feature-title h2 {
+    margin: 0;
+    margin-bottom: 29px;
+    width: 600px;
+
     font-size: 21px;
     font-weight: 700;
 }
 
+.feature-title p {
+    margin: 0;
+}
+
 .features-image {
+    display: flex;
     color: #ffffff;
     background-color: #81b3d2;
 }
 
 .feature-item {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding-top: 46px;
+    padding-bottom: 59px;
     line-height: 21px;
 }
 
+.feature-item-img {
+    display: flex;
+}
+
+.feature-item .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+}
+
 .feature-item h3 {
+    margin: 0;
+    width: 155px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.feature-item span {
+    margin: 23px 0;
+}
+
+.feature-item p {
+    margin: 0;
+}
+
+.feature-item b {
+    margin-top: 29px;
+    margin-bottom: 24px;
     font-size: 21px;
     font-weight: 700;
 }
 
 .feature-icons {
+    display: flex;
     color: #000000;
     background-color: #ffffff;
 }
 
-.feature-icons ul {
-    list-style: none;
+.feature-icons .feature-item {
+    padding-top: 60px;
+    padding-bottom: 79px;
 }
 
-.features ul {
+.feature-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 .features {
+    display: flex;
     color: #000000;
     background-color: #eeeeee;
 }
 
 .interested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #000000;
     background-color: #ffffff;
 }
 
+.int-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+    margin-bottom: 46px;
+}
+
 .int-container h2 {
+    width: 600px;
+    margin: 0;
+    margin-bottom: 24px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
 }
 
 .int-container p {
+    margin: 0;
     line-height: 24px;
 }
 
+.form-container {
+    display: flex;
+    width: 568px;
+}
+
 .search-btn {
+    width: 100%;
+    padding: 30px 0;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -179,15 +298,31 @@ a {
 }
 
 .map {
+    display: flex;
     height: 593px; 
     background-image: url("../img/map.jpg");
 }
 
 .footer {
-    text-align: center;
+    display: flex;
     color: #000000;
     background-color: #ffffff;
 }
+
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 36px 0;
+    align-items: center;
+}
+
+.footer-social a:nth-child(2) {
+    margin: 0 6px;
+}
+
 
 .footer-contacts a {
     font-size: 21px;
@@ -195,13 +330,13 @@ a {
     color: #000000;
 }
 
-/* заменить флексами ?
 .social-btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 46px;
     height: 48px;
     color: #ffffff;
-    position: relative;
 
     background-color: #81b3d2;
 }
@@ -218,15 +353,15 @@ a {
 .tw-icon,
 .fb-icon,
 .yt-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: inline-block;
     fill: currentColor;
 }
-*/
+
+.footer-copyright span {
+    margin-right: 9px;
+}
+
 .academy-btn {
+    display: flex;
     color: #231f20;
 }
 
@@ -253,35 +388,69 @@ a {
     opacity: 1;
 }
 
+.main-hotels {
+    display: flex;
+    flex-direction: column;
+}
+
 .hotels-filter {
+    display: flex;
     color: #ffffff;
 
     background: #84a3c2 url("../img/filter-background.jpg") no-repeat;
 }
 
 .form-filter {
+    display: flex;
+    width: 100%;
+    padding-top: 29px;
+    padding-bottom: 7px;
     line-height: 21px;
 }
 
+.infastructure,
+.type-of-housing {
+    display: flex;
+    width: 264px;
+}
+
+.cost-container {
+    display: flex;
+    margin-left: auto;
+}
+
 .form-filter legend {
+    margin-bottom: 22px;
     font-size: 16px;
     font-weight: 700;
 }
 
 fieldset {
+    padding: 0;
+    margin: 0;
     border: none;
 }
 
 fieldset ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
+.infastructure-list li,
+.type-of-housing-list li {
+    margin-bottom: 25px;
+}
+
 .cost-title {
+    margin: 0;
+    margin-bottom: 9px;
     font-size: 16px;
     font-weight: 700;
 }
 
 .price-cost {
+    margin: 0;
     width: 314px;
     border: 2px solid #ffffff;
 }
@@ -310,6 +479,8 @@ fieldset ul {
 }
 
 .results {
+    display: flex;
+    padding: 30px 0;
     color: #000000;
 
     background-color: #ffffff;
@@ -317,17 +488,34 @@ fieldset ul {
 }
 
 .found {
+    display: flex;
+    width: 165px;
     font-size: 21px;
     font-weight: 700;
 }
 
 .sorting {
+    display: flex;
+    align-items: center;
+    width: 355px;
     font-size: 12px;
     line-height: 18px;
 }
 
-.sorting ul {
+.sorting span {
+    display: flex;
+    margin-right: 11px;
+}
+
+.sorting-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.sorting-list li {
+    padding-left: 29px;
 }
 
 .sorting a {
@@ -356,7 +544,9 @@ fieldset ul {
 }
 
 .arrows {
-
+    display: flex;
+    width: 34px;
+    margin-left: auto;
 }
 
 .up-dir {
@@ -377,6 +567,8 @@ fieldset ul {
 }
 
 .view {
+    display: flex;
+    padding: 30px 0;
     line-height: 21px;
     color: #000000;
 
@@ -384,35 +576,61 @@ fieldset ul {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.view-description h2 {
+.photo {
+    display: flex;
+    width: 135px;
+    margin-right: 28px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.description h2 {
+    margin: 0;
+    margin-bottom: 8px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
 }
 
-.view-description a {
+.hotel-type {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.hotel-type span {
+    width: 110px;
+    color: #333333;
+}
+
+.hotel-name {
     color: #000000;
 }
 
-.view-description a:hover {
+.hotel-name:hover {
     color: #81b3d2;
 }
 
-.view-description a:active {
+.hotel-name:active {
     color: #000000;
     opacity: 0.3;
 }
 
-.view-description span {
-    color: #333333;
+.info-btns {
+    display: flex;
 }
 
 .btn {
+    padding: 3px 16px;
     font-weight: 700;
     color: #ffffff;
 }
 
 .btn-more {
+    margin-right: 6px;
     background-color: #81b3d2;
 }
 
@@ -438,7 +656,13 @@ fieldset ul {
     background-color: #503e33;
 }
 
+.view-rating {
+    display: flex;
+    flex-direction: column;
+}
+
 .rating {
+    margin-top: auto;
     color: #666666;
     background-color: #f2f2f2;
 }
