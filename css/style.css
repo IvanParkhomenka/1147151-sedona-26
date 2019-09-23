@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 body {
@@ -17,13 +17,13 @@ body {
 
     background-color: #f2f2f2;
 }
-/*
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-*/
+
 a {
     text-decoration: none;
 }
@@ -199,18 +199,13 @@ a {
 }
 
 .feature-item span {
-    margin: 23px 0;
+    margin-top: 23px;
 }
 
 .feature-item p {
     margin: 0;
-}
-
-.feature-item b {
-    margin-top: 29px;
-    margin-bottom: 24px;
-    font-size: 21px;
-    font-weight: 700;
+    margin-top: 23px;
+    max-width: 100%;
 }
 
 .feature-icons {
@@ -219,17 +214,33 @@ a {
     background-color: #ffffff;
 }
 
-.feature-icons .feature-item {
-    padding-top: 60px;
-    padding-bottom: 79px;
-}
-
 .feature-list {
     display: flex;
     margin: 0;
     padding: 0;
 
     list-style: none;
+}
+
+.feature-icons .feature-item {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+.icon-appartment {
+    background: url("../img/icon-appartment.svg") no-repeat 50% 62px;
+}
+
+.icon-food {
+    background: url("../img/icon-food.svg") no-repeat 50% 64px;
+}
+
+.icon-gift {
+    background: url("../img/icon-gift.svg") no-repeat 50% 58px;
+}
+
+.feature-icons .container {
+    margin-top: 164px;
 }
 
 .features {
