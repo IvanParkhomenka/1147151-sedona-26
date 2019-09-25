@@ -408,13 +408,13 @@ a {
     display: flex;
     color: #ffffff;
 
-    background: #84a3c2 url("../img/filter-background.jpg") no-repeat;
+    background: #84a3c2 url("../img/filter-background.jpg") no-repeat 0 -56px;;
 }
 
 .form-filter {
     display: flex;
     width: 100%;
-    padding-top: 29px;
+    padding-top: 27px;
     padding-bottom: 7px;
     line-height: 21px;
 }
@@ -422,16 +422,21 @@ a {
 .infastructure,
 .type-of-housing {
     display: flex;
-    width: 264px;
+    width: 25%;
 }
 
-.cost-container {
+.type-of-housing {
+    margin-left: -10px;
+}
+
+.filter-range-container {
     display: flex;
+    width: 50%;
     margin-left: auto;
 }
 
 .form-filter legend {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -453,40 +458,170 @@ fieldset ul {
     margin-bottom: 25px;
 }
 
-.cost-title {
-    margin: 0;
+.form-filter input[type=checkbox] {
+    display: none;
+}
+
+.infastructure label {
+    position: relative;
+    padding-left: 40px;
+}
+
+.type-of-housing label {
+    position: relative;
+    padding-left: 42px;
+}
+
+input[type=checkbox] + label::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+input[type=checkbox]:checked + label::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 27px;
+    height: 23px;
+    background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.filter-range {
+    width: 317px;
+    margin-left: auto;
+  
+    color: #ffffff;
+    text-transform: uppercase;
+}
+  
+.filter-range-title {
     margin-bottom: 9px;
-    font-size: 16px;
+  
     font-weight: 700;
-}
-
-.price-cost {
-    margin: 0;
-    width: 314px;
-    border: 2px solid #ffffff;
-}
-
-.price-cost input {
-    font: inherit;
+    font-size: 16px;
     line-height: 21px;
-    color: inherit;
-    width: 50px;
-    border: 0;
-    background-color: transparent;
+}
+  
+.price-controls {
+    position: relative;
+    
+    height: 36px;
+    margin-bottom: 20px;
+    
+    font-size: 0;
+  
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+  
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+  
+.price-controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 32px;
+    vertical-align: top;
+  
+    cursor: pointer;
+}
+ 
+.price-controls .min-price {
+    padding-left: 64px;
 }
 
-.btn-show {
+.price-controls .max-price {
+    padding-left: 75px;
+}
+ 
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    line-height: 21px;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+}
+ 
+.range-controls {
+    position: relative;
+  
+    margin-bottom: 32px;
+}
+  
+.range-controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+}
+  
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+}
+  
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    
+    width: 20px;
+    height: 23px;
+  
+
+    cursor: pointer;
+}
+ 
+.range-toggle-min {
+    left: 0;
+}
+  
+.range-toggle-max {
+    left: 80%;
+}
+  
+.btn-transparent {
+    display: block;
+    margin: 0;
+    margin-left: 85px;
+    padding: 6px 35px;
+  
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
-
-    background-color: transparent;
+    text-transform: uppercase;
+  
+    background: transparent;
     border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
-
-.btn-show:hover {
+  
+.btn-transparent:hover {
     color: #000000;
-    background-color: #ffffff;
+  
+    background: #ffffff;
 }
 
 .results {
@@ -500,6 +635,7 @@ fieldset ul {
 
 .found {
     display: flex;
+    align-items: center;
     width: 165px;
     font-size: 21px;
     font-weight: 700;
@@ -520,6 +656,7 @@ fieldset ul {
 
 .sorting-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -556,6 +693,7 @@ fieldset ul {
 
 .arrows {
     display: flex;
+    justify-content: space-between;
     width: 34px;
     margin-left: auto;
 }
@@ -579,7 +717,8 @@ fieldset ul {
 
 .view {
     display: flex;
-    padding: 30px 0;
+    padding-top: 29px;
+    padding-bottom: 30px;
     line-height: 21px;
     color: #000000;
 
@@ -588,32 +727,37 @@ fieldset ul {
 }
 
 .photo {
-    display: flex;
+    display: inline-block;
     width: 135px;
-    margin-right: 28px;
+    height: 90px;
+    margin-right: 31px;
+}
+
+.photo img {
+    width: 135px;
+    height: 90px;
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
+    display: inline-block;
 }
 
 .description h2 {
     margin: 0;
     margin-bottom: 8px;
+    margin-top: -5px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
 }
 
 .hotel-type {
-    display: flex;
-    margin-bottom: 14px;
+    margin-bottom: 17px;
 }
 
 .hotel-type span {
-    width: 110px;
+    display: inline-block;
+    width: 112px;
     color: #333333;
 }
 
@@ -631,7 +775,7 @@ fieldset ul {
 }
 
 .info-btns {
-    display: flex;
+    display: inline-block;
 }
 
 .btn {
@@ -668,12 +812,19 @@ fieldset ul {
 }
 
 .view-rating {
-    display: flex;
-    flex-direction: column;
+    margin-left: auto;
+
+}
+
+.stars {
+    display: block;
+    text-align: right;
+    margin-bottom: 41px;
 }
 
 .rating {
-    margin-top: auto;
+    display: block;
+    padding: 3px 13px;
     color: #666666;
     background-color: #f2f2f2;
 }
