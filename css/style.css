@@ -397,14 +397,20 @@ a {
 /* form-search */
 
 .form-container {
+    position: relative;
     flex-direction: column;
 }
 
 .form-search {
+    position: absolute;
+    top: 86px;
+    
     width: 568px;
     padding: 54px 57px 55px 56px;
     display: flex;
     flex-direction: column;
+
+    background-color: #ffffff;
 }
 
 .form-search label {
@@ -474,10 +480,53 @@ a {
     width: 50%;
 }
 
+.half-width input {
+    width: 38px;
+    text-align: center;
+}
+
 .adults,
 .kids {
+    display: flex;
     width: 114px;
     margin-left: auto;
+}
+
+.kids-label {
+    margin-left: 50px;
+}
+
+.btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    color: #a9a9a9;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.btn-icon:hover {
+    color: #000000;
+}
+
+.btn-icon:active {
+    color: #81b3d2;
+}
+
+.btn-icon .plus {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.btn-icon .minus {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.btn-icon svg {
+    fill: currentColor;
 }
 
 .find-btn {
@@ -494,10 +543,10 @@ a {
   background-color: #81b3d2;
   border: none;
 }
-
+/*
 .form-search {
     display: none;
-}
+} */
 
 /* hotels.html */
 
