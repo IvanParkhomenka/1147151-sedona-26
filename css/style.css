@@ -314,7 +314,7 @@ a {
 
 .map {
     display: flex;
-    height: 473px; 
+    height: 593px; 
     background-image: url("../img/map.jpg");
 }
 
@@ -324,14 +324,20 @@ a {
     background-color: #ffffff;
 }
 
+.footer-index {
+    margin-top: -120px;
+    opacity: 0.9;
+}
+
 .footer-contacts,
 .footer-social,
 .footer-copyright {
     width: 400px;
+    padding: 36px 0;
     display: flex;
     justify-content: center;
-    padding: 36px 0;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-social a:nth-child(2) {
