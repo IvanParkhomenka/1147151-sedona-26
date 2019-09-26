@@ -549,6 +549,15 @@ a {
   background-color: #81b3d2;
   border: none;
 }
+
+.find-btn:hover {
+    background-color: #669ec0;
+}
+
+.find-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
 /*
 .form-search {
     display: none;
