@@ -182,6 +182,7 @@ a {
 .feature-item {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 400px;
     padding-top: 45px;
     padding-bottom: 60px;
@@ -196,6 +197,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     width: 310px;
 }
 
@@ -236,15 +238,15 @@ a {
 }
 
 .icon-appartment {
-    background: url("../img/icon-appartment.svg") no-repeat 50% 62px;
+    background: url("../img/icon-appartment.svg") no-repeat 50% 60px;
 }
 
 .icon-food {
-    background: url("../img/icon-food.svg") no-repeat 50% 64px;
+    background: url("../img/icon-food.svg") no-repeat 50% 61px;
 }
 
 .icon-gift {
-    background: url("../img/icon-gift.svg") no-repeat 50% 58px;
+    background: url("../img/icon-gift.svg") no-repeat 50% 56px;
 }
 
 .feature-icons .container {
@@ -269,7 +271,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 52px;
+    padding-top: 50px;
     margin-bottom: 46px;
 }
 
@@ -412,11 +414,17 @@ a {
     top: 86px;
     
     width: 568px;
-    padding: 54px 57px 55px 56px;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    padding: 55px 0;
     background-color: #ffffff;
+}
+
+.form-search-wrapper {
+    width: 458px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-search label {
@@ -446,7 +454,7 @@ a {
 .date-container {
     display: flex;
     position: relative;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
 }
 
 .calendar {
@@ -472,11 +480,11 @@ a {
 
 .number-of-persons {
     display: flex;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
 }
 
 .date-container input {
-    padding-left: 15px;
+    padding-left: 12px;
     margin-left: auto;
     width: 346px;
 }
@@ -496,6 +504,10 @@ a {
     display: flex;
     width: 114px;
     margin-left: auto;
+}
+
+.adults {
+    margin-right: 4px;
 }
 
 .kids-label {
@@ -543,7 +555,6 @@ a {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
 
   background-color: #81b3d2;
