@@ -181,11 +181,10 @@ a {
 
 .feature-item {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 400px;
-    padding-top: 45px;
-    padding-bottom: 60px;
+    padding: 45px;
     line-height: 21px;
 }
 
@@ -193,29 +192,20 @@ a {
     display: flex;
 }
 
-.feature-item .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 310px;
-}
-
 .feature-item h3 {
-    margin: 0;
-    margin-bottom: 23px;
+    margin: 0 auto 24px;
     width: 155px;
     font-size: 21px;
     font-weight: 700;
 }
 
 .feature-item span {
+    display: block;
     margin-bottom: 23px;
 }
 
 .feature-item p {
     margin: 0;
-    max-width: 100%;
 }
 
 .feature-icons {
@@ -237,6 +227,10 @@ a {
     padding-bottom: 83px;
 }
 
+.feature-icons .icon-title {
+    margin-top: 160px;
+}
+
 .icon-appartment {
     background: url("../img/icon-appartment.svg") no-repeat 50% 60px;
 }
@@ -249,14 +243,18 @@ a {
     background: url("../img/icon-gift.svg") no-repeat 50% 56px;
 }
 
-.feature-icons .container {
-    margin-top: 161px;
-}
-
 .features {
     display: flex;
     color: #000000;
     background-color: #eeeeee;
+}
+
+.features p {
+    padding: 0 20px;
+}
+
+.features .feature-item {
+    padding-bottom: 59px;
 }
 
 .interested {
