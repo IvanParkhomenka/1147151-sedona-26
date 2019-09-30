@@ -225,6 +225,8 @@ a {
 .feature-icons .feature-item {
     padding-top: 0;
     padding-bottom: 83px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .feature-icons .icon-title {
