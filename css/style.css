@@ -114,6 +114,7 @@ a {
     top: 0;
     left: 50%;
     transform: translate(-50%);
+    z-index: 2;
 }
 
 .main-index {
@@ -123,6 +124,7 @@ a {
 }
 
 .main-image {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,6 +135,9 @@ a {
 
 .main-image::after {
     content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
     height: 58px;
     width: 1201px;
     background: url("../img/polygon.png") no-repeat; 
@@ -140,7 +145,7 @@ a {
 
 .welcome-img {
     margin-top: 76px;
-    margin-bottom: 21px;
+    margin-bottom: 79px;
 }
 
 
