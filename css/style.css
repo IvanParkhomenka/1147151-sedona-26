@@ -375,6 +375,7 @@ a {
 }
 
 .social-btn {
+    position: relative; /* для наследования :active в ie11 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,6 +384,16 @@ a {
     color: #ffffff;
 
     background-color: #81b3d2;
+}
+
+.social-btn::before { /* для наследования :active в ie11 */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .social-btn:hover {
@@ -405,8 +416,19 @@ a {
 }
 
 .academy-btn {
+    position: relative; /* для наследования :active в ie11 */
     display: flex;
     color: #231f20;
+}
+
+.academy-btn::before { /* для наследования :active в ie11 */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .academy-btn:hover {
@@ -1069,7 +1091,6 @@ input[type=checkbox]:checked:disabled + label::before {
 
 .view-rating {
     margin-left: auto;
-
 }
 
 .stars {
