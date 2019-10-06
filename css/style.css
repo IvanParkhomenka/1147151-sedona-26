@@ -705,13 +705,18 @@ fieldset ul {
     list-style: none;
 }
 
-.infastructure-list li,
-.type-of-housing-list li {
+.checkbox-container {
+    position: relative;
     margin-bottom: 25px;
 }
 
 .form-filter input[type=checkbox] {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 23px;
+    opacity: 0;
 }
 
 .infastructure label {
@@ -732,6 +737,10 @@ input[type=checkbox] + label::before {
     width: 23px;
     height: 23px;
     background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+input[type=checkbox]:focus + label::before {
+    box-shadow: 0 0 0 3px #5496bd;
 }
 
 input[type=checkbox]:checked + label::before {
