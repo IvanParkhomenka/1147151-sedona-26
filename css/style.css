@@ -464,6 +464,14 @@ a {
     background-color: #ffffff;
 }
 
+.form-search-hide {
+    display: none;
+}
+
+.form-search-show {
+    display: flex;
+}
+
 .form-search-wrapper {
     width: 458px;
     display: flex;
