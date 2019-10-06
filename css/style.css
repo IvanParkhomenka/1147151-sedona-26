@@ -871,7 +871,6 @@ input[type=checkbox]:checked:disabled + label::before {
     width: 20px;
     height: 23px;
   
-
     cursor: pointer;
 }
  
@@ -987,7 +986,18 @@ input[type=checkbox]:checked:disabled + label::before {
 }
 
 .up-dir {
+    position: relative; /* для наследования :active в ie11 */
     color: #cacaca;
+}
+
+.up-dir::before { /* для наследования :active в ie11 */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .up-dir:hover {
