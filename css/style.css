@@ -64,23 +64,9 @@ a {
     align-items: center;
 }
 
-.wrapper {
-    width: 100%;
-}
-
 .inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding-left: 71px;
     padding-right: 72px;
-}
-
-.main-nav .inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
 }
 
 .main-nav .nav {
@@ -92,6 +78,7 @@ a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
+    width: 100%;
 }
 
 .nav li {
@@ -821,9 +808,6 @@ a {
 }
 
 .hotels-filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     color: #ffffff;
     background: #84a3c2 url("../img/filter-background.jpg") no-repeat 0 -56px;
 }
@@ -832,7 +816,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     padding-top: 27px;
     padding-bottom: 6px;
     line-height: 21px;
@@ -844,10 +827,20 @@ a {
     display: -ms-flexbox;
     display: flex;
     width: 25%;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 .type-of-housing {
     margin-left: -10px;
+}
+
+.infastructure ul,
+.type-of-housing ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .filter-range-container {
@@ -866,18 +859,6 @@ a {
 
 .infastructure legend {
     letter-spacing: 0.3px;
-}
-
-fieldset {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-fieldset ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .checkbox-container {
@@ -1077,6 +1058,17 @@ input[type=checkbox]:checked:disabled + label::before {
     color: #000000;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.results .inner,
+.view .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .found {

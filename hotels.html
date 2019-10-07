@@ -11,23 +11,21 @@
     <div class="container-all">
 
       <header class="main-header">
-        <nav class="main-nav">
-          <div class="wrapper">
-            <div class="inner">
-              <ul class="nav">
-                <li><a href="#" tabindex="1">Информация</a></li>
-                <li><a href="#" tabindex="2">Фото и Видео</a></li>
-                <li><a href="map.html" tabindex="4">Карта штата</a></li>
-                <li><a class="current">Гостиницы</a></li>
-              </ul>
+        <div class="inner">
+          <nav class="main-nav">
+            <ul class="nav">
+              <li><a href="#" tabindex="1">Информация</a></li>
+              <li><a href="#" tabindex="2">Фото и Видео</a></li>
+              <li><a href="map.html" tabindex="4">Карта штата</a></li>
+              <li><a class="current">Гостиницы</a></li>
+            </ul>
+            <div class="logo">
+              <a href="index.html" tabindex="3">
+                <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
+              </a>
             </div>
-          </div>
-          <div class="logo">
-            <a href="index.html" tabindex="3">
-              <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
-            </a>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </header>
 
       <main class="main-hotels">
@@ -35,74 +33,68 @@
 
         <section class="hotels-filter">
           <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-          <div class="wrapper">
-            <div class="inner">
-              <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
-                <div class="infastructure">
-                  <fieldset class="infastructure-field">
-                    <legend>Инфраструктура:</legend>
-                    <ul class="infastructure-list">
-                      <li class="checkbox-container">
-                        <input type="checkbox" name="pool" id="pool" checked>
-                        <label for="pool">Бассейн</label>
-                      </li>
-                      <li class="checkbox-container">
-                        <input type="checkbox" name="parking" id="parking">
-                        <label for="parking">Парковка</label>
-                      </li>
-                      <li class="checkbox-container">
-                        <input type="checkbox" name="wi-fi" id="wi-fi">
-                        <label for="wi-fi">Wi-fi</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </div>
-                <div class="type-of-housing">
-                  <fieldset class="type-of-housing-field">
-                    <legend>Тип жилья:</legend>
-                    <ul class="type-of-housing-list">
-                      <li class="checkbox-container">
-                        <input type="checkbox" name="hotel" id="hotel" checked>
-                        <label for="hotel">Гостиница</label>
-                      </li>
-                      <li class="checkbox-container">
-                        <input type="checkbox" name="motel" id="motel" checked>
-                        <label for="motel">Мотель</label>
-                      </li>
-                      <li class="checkbox-container">
-                        <input type="checkbox" name="appartment" id="appartment" checked>
-                        <label for="appartment">Апартаменты</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </div>
-                <div class="filter-range-container">
-                  <div class="filter-range">
-                    <div class="filter-range-title">Стоимость в сутки (р):</div>
-                    <div class="price-controls">
-                      <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-                    </div>
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="range-toggle range-toggle-min">
-                          <svg class="filter-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                            <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
-                          </svg>
-                      </div>
-                      <div class="range-toggle range-toggle-max">
-                          <svg class="filter-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                            <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
-                          </svg>
-                      </div>
-                    </div>
-                    <button class="btn-transparent" type="submit">Показать</button>
+          <div class="inner">
+            <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="infastructure">
+                <legend>Инфраструктура:</legend>
+                <ul class="infastructure-list">
+                  <li class="checkbox-container">
+                    <input type="checkbox" name="pool" id="pool" checked>
+                    <label for="pool">Бассейн</label>
+                  </li>
+                  <li class="checkbox-container">
+                    <input type="checkbox" name="parking" id="parking">
+                    <label for="parking">Парковка</label>
+                  </li>
+                  <li class="checkbox-container">
+                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                    <label for="wi-fi">Wi-fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="type-of-housing">
+                <legend>Тип жилья:</legend>
+                <ul class="type-of-housing-list">
+                  <li class="checkbox-container">
+                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <label for="hotel">Гостиница</label>
+                  </li>
+                  <li class="checkbox-container">
+                    <input type="checkbox" name="motel" id="motel" checked>
+                    <label for="motel">Мотель</label>
+                  </li>
+                  <li class="checkbox-container">
+                    <input type="checkbox" name="appartment" id="appartment" checked>
+                    <label for="appartment">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="filter-range-container">
+                <div class="filter-range">
+                  <div class="filter-range-title">Стоимость в сутки (р):</div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                   </div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min">
+                      <svg class="filter-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                        <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                      </svg>
+                    </div>
+                    <div class="range-toggle range-toggle-max">
+                      <svg class="filter-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                        <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <button class="btn-transparent" type="submit">Показать</button>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </section>
 
@@ -169,6 +161,7 @@
             </div>
           </div>
         </article>
+
         <article class="view">
           <h2 class="visually-hidden">Мотель "Desert quail inn"</h2>
           <div class="wrapper">
