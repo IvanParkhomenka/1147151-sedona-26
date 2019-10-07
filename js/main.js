@@ -7,4 +7,4 @@ link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.toggle("form-search-show");
     dateIn.focus();
-})
+});
