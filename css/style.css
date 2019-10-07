@@ -232,18 +232,17 @@ a {
     font-weight: 700;
 }
 
-.feature-item span {
-    display: block;
-    margin-bottom: 21px;
-}
-
 .feature-item p {
     margin: 0;
 }
 
-.feature-item-1 p {
+.feature-item-1 .text {
     padding: 0 7px;
     letter-spacing: 0.3px;
+}
+
+.feature-item .number {
+    margin-bottom: 21px;
 }
 
 .feature-icons {
